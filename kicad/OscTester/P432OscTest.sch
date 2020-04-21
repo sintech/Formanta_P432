@@ -35,8 +35,6 @@ F 3 "~" H 1000 4800 50  0001 C CNN
 	1    1000 4800
 	-1   0    0    -1  
 $EndComp
-Text Label 1450 5600 2    50   ~ 0
-Unison
 Text Label 1300 5700 2    50   ~ 0
 Q1
 Text Label 1300 5800 2    50   ~ 0
@@ -254,11 +252,6 @@ Wire Wire Line
 Wire Wire Line
 	1600 1600 1600 1550
 Wire Wire Line
-	2150 1550 2150 2400
-Wire Wire Line
-	2150 2400 1650 2400
-Connection ~ 1650 2400
-Wire Wire Line
 	1200 4500 1650 4500
 Wire Wire Line
 	1650 4500 1650 4600
@@ -366,36 +359,6 @@ Wire Wire Line
 Connection ~ 1650 3800
 Wire Wire Line
 	1650 3800 1650 3850
-$Comp
-L power:+5V #PWR03
-U 1 1 5E9BDAFE
-P 3050 1900
-F 0 "#PWR03" H 3050 1750 50  0001 C CNN
-F 1 "+5V" H 3050 2040 50  0000 C CNN
-F 2 "" H 3050 1900 50  0001 C CNN
-F 3 "" H 3050 1900 50  0001 C CNN
-	1    3050 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 2000 3050 2000
-Wire Wire Line
-	3050 2000 3050 1900
-Wire Wire Line
-	2900 2100 3050 2100
-Wire Wire Line
-	3050 2100 3050 2000
-Connection ~ 3050 2000
-Wire Wire Line
-	3050 2200 3050 2100
-Connection ~ 3050 2100
-Wire Wire Line
-	2900 2200 3050 2200
-Wire Wire Line
-	2900 2300 3050 2300
-Wire Wire Line
-	3050 2300 3050 2200
-Connection ~ 3050 2200
 Wire Notes Line
 	3500 1700 4100 1700
 Text Notes 4200 1750 0    50   ~ 10
@@ -408,19 +371,6 @@ Text Notes 3850 1800 0    50   ~ 10
 3
 Text Notes 4000 1800 0    50   ~ 10
 4
-$Comp
-L power:+5V #PWR09
-U 1 1 5EA0120D
-P 1600 5550
-F 0 "#PWR09" H 1600 5400 50  0001 C CNN
-F 1 "+5V" H 1600 5690 50  0000 C CNN
-F 2 "" H 1600 5550 50  0001 C CNN
-F 3 "" H 1600 5550 50  0001 C CNN
-	1    1600 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 5600 1600 5550
 Wire Notes Line
 	3500 1850 4750 1850
 Wire Notes Line
@@ -433,9 +383,6 @@ Wire Wire Line
 Connection ~ 1800 1550
 Wire Wire Line
 	1800 1550 2000 1550
-Connection ~ 2000 1550
-Wire Wire Line
-	2000 1550 2150 1550
 Wire Wire Line
 	1200 1100 1400 1100
 Connection ~ 1400 1200
@@ -487,31 +434,8 @@ F 3 "~" H 1000 1000 50  0001 C CNN
 	1    1000 1000
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_DIP_x04 SW1
-U 1 1 5E857AA0
-P 2600 2100
-F 0 "SW1" H 2600 2450 50  0000 C CNN
-F 1 "SW_DIP_x04" H 2600 1850 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm" H 2600 2100 50  0001 C CNN
-F 3 "~" H 2600 2100 50  0001 C CNN
-	1    2600 2100
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1400 1900 1400 2000
-Wire Wire Line
-	2000 2300 2300 2300
-Connection ~ 2000 2300
-Wire Wire Line
-	2300 2200 1800 2200
-Connection ~ 1800 2200
-Wire Wire Line
-	2300 2100 1600 2100
-Connection ~ 1600 2100
-Wire Wire Line
-	2300 2000 1400 2000
-Connection ~ 1400 2000
 $Comp
 L Jumper:Jumper_3_Bridged12 JP2
 U 1 1 5E8BE8F9
@@ -677,7 +601,7 @@ Text Notes 3850 3200 0    50   ~ 0
 Text Notes 3500 3350 0    50   ~ 0
 First set 0101, tune to 1000 Hz.
 Text Notes 3600 1700 0    50   ~ 10
-DIP-code
+DIP-Code
 Wire Notes Line
 	4100 3250 4100 1600
 Wire Notes Line
@@ -686,4 +610,90 @@ Wire Notes Line
 	3500 3250 3500 1600
 Wire Notes Line
 	3500 1600 4750 1600
+Wire Wire Line
+	1600 5600 1600 5700
+Connection ~ 1600 5700
+Connection ~ 1400 2000
+Connection ~ 1600 2100
+Connection ~ 1800 2200
+Connection ~ 2000 2300
+Connection ~ 2000 1550
+Connection ~ 1650 2400
+Text Notes 2300 1800 1    50   ~ 10
+Code
+Wire Notes Line
+	2200 1550 2200 2350
+Wire Notes Line
+	2200 1850 2350 1850
+Wire Notes Line
+	2350 1550 2200 1550
+Wire Notes Line
+	2350 2350 2350 1550
+Wire Notes Line
+	2200 2350 2350 2350
+Text Label 2250 2000 0    59   ~ 0
+4
+Text Label 2250 2100 0    59   ~ 0
+3
+Text Label 2250 2200 0    59   ~ 0
+2
+Text Label 2250 2300 0    59   ~ 0
+1
+Wire Wire Line
+	2300 2000 1400 2000
+Wire Wire Line
+	2300 2100 1600 2100
+Wire Wire Line
+	2300 2200 1800 2200
+Wire Wire Line
+	2000 2300 2300 2300
+Wire Wire Line
+	2000 1550 2150 1550
+Wire Wire Line
+	2150 2400 1650 2400
+Wire Wire Line
+	2150 1550 2150 2400
+Connection ~ 3050 2200
+Wire Wire Line
+	3050 2300 3050 2200
+Wire Wire Line
+	2900 2300 3050 2300
+Wire Wire Line
+	2900 2200 3050 2200
+Connection ~ 3050 2100
+Wire Wire Line
+	3050 2200 3050 2100
+Connection ~ 3050 2000
+Wire Wire Line
+	3050 2100 3050 2000
+Wire Wire Line
+	2900 2100 3050 2100
+Wire Wire Line
+	3050 2000 3050 1900
+Wire Wire Line
+	2900 2000 3050 2000
+$Comp
+L power:+5V #PWR03
+U 1 1 5E9BDAFE
+P 3050 1900
+F 0 "#PWR03" H 3050 1750 50  0001 C CNN
+F 1 "+5V" H 3050 2040 50  0000 C CNN
+F 2 "" H 3050 1900 50  0001 C CNN
+F 3 "" H 3050 1900 50  0001 C CNN
+	1    3050 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x04 SW1
+U 1 1 5E857AA0
+P 2600 2100
+F 0 "SW1" H 2600 1850 50  0000 C CNN
+F 1 "SW_DIP_x04" H 2600 2450 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm" H 2600 2100 50  0001 C CNN
+F 3 "~" H 2600 2100 50  0001 C CNN
+	1    2600 2100
+	-1   0    0    1   
+$EndComp
+Text Label 1450 5600 2    50   ~ 0
+Unison
 $EndSCHEMATC
