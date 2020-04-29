@@ -373,8 +373,6 @@ Text Notes 4000 1800 0    50   ~ 10
 4
 Wire Notes Line
 	3500 1850 4750 1850
-Wire Notes Line
-	3500 3100 4750 3100
 Wire Wire Line
 	1400 1550 1600 1550
 Connection ~ 1600 1550
@@ -487,19 +485,17 @@ $EndComp
 Text Notes 3550 2000 0    50   ~ 0
 0
 Text Notes 3700 2000 0    50   ~ 0
-1
-Text Notes 3850 2000 0    50   ~ 0
 0
 Text Notes 4000 2000 0    50   ~ 0
 0
 Text Notes 4200 2000 0    50   ~ 0
-39 Hz
-Text Notes 3850 2150 0    50   ~ 0
+33 Hz
+Text Notes 3550 2150 0    50   ~ 0
 0
 Text Notes 3700 2150 0    50   ~ 0
 1
 Text Notes 4200 2150 0    50   ~ 0
-63 Hz
+65 Hz
 Wire Notes Line
 	3500 2200 4750 2200
 Wire Notes Line
@@ -507,12 +503,12 @@ Wire Notes Line
 Wire Notes Line
 	3500 2350 4750 2350
 Text Notes 4200 2300 0    50   ~ 0
-131 Hz
+127 Hz
 Text Notes 3550 2300 0    50   ~ 0
 0
-Text Notes 3850 2300 0    50   ~ 0
+Text Notes 4000 2300 0    50   ~ 0
 1
-Text Notes 3550 2150 0    50   ~ 0
+Text Notes 3850 2150 0    50   ~ 0
 1
 Text Notes 4000 2150 0    50   ~ 0
 0
@@ -521,93 +517,49 @@ Wire Notes Line
 Wire Notes Line
 	3500 2650 4750 2650
 Text Notes 4200 2450 0    50   ~ 0
-261 Hz
+250 Hz
 Text Notes 3700 2450 0    50   ~ 0
 1
 Text Notes 3550 2450 0    50   ~ 0
 0
-Text Notes 4000 2450 0    50   ~ 0
-0
 Text Notes 3850 2450 0    50   ~ 0
+0
+Text Notes 4000 2450 0    50   ~ 0
 1
 Wire Notes Line
 	3500 2800 4750 2800
-Wire Notes Line
-	3500 2950 4750 2950
 Text Notes 4200 2600 0    50   ~ 0
-510 Hz
+500 Hz
 Text Notes 3550 2600 0    50   ~ 0
-0
-Text Notes 3850 2600 0    50   ~ 0
 0
 Text Notes 4000 2600 0    50   ~ 0
 1
-Wire Notes Line
-	3500 3250 4750 3250
 Text Notes 4200 2750 0    50   ~ 0
 1000 Hz
 Text Notes 3700 2750 0    50   ~ 0
 1
 Text Notes 3550 2750 0    50   ~ 0
 0
-Text Notes 3850 2750 0    50   ~ 0
-0
 Text Notes 4000 2750 0    50   ~ 0
 1
 Text Notes 4200 2900 0    50   ~ 0
-2000 Hz
+1122 Hz
 Text Notes 3850 2900 0    50   ~ 0
 1
-Text Notes 3550 2900 0    50   ~ 0
-0
-Text Notes 3700 2900 0    50   ~ 0
-0
 Text Notes 4000 2900 0    50   ~ 0
-1
-Text Notes 4200 3050 0    50   ~ 0
-4000 Hz
-Text Notes 3550 3050 0    50   ~ 0
-0
-Text Notes 4000 3050 0    50   ~ 0
-1
-Text Notes 4200 3200 0    50   ~ 0
-4490 Hz
-Text Notes 4000 3200 0    50   ~ 0
 1
 Text Notes 3700 2300 0    50   ~ 0
 0
-Text Notes 4000 2300 0    50   ~ 0
+Text Notes 3850 2300 0    50   ~ 0
 0
 Wire Notes Line
 	3500 1900 4750 1900
-Text Notes 3700 3200 0    50   ~ 0
-1
-Text Notes 3700 3050 0    50   ~ 0
-1
-Wire Notes Line
-	3650 1700 3650 3250
-Wire Notes Line
-	3950 1700 3950 3250
-Wire Notes Line
-	3800 1700 3800 3250
 Text Notes 3700 2600 0    50   ~ 0
 0
-Text Notes 3850 3050 0    50   ~ 0
-1
-Text Notes 3550 3200 0    50   ~ 0
-1
-Text Notes 3850 3200 0    50   ~ 0
-1
-Text Notes 3500 3350 0    50   ~ 0
-First set 0101, tune to 1000 Hz.
+Text Notes 3500 3050 0    50   ~ 0
+First set 0111, tune to 1000 Hz.
 Text Notes 3600 1700 0    50   ~ 10
 DIP-Code
-Wire Notes Line
-	4100 3250 4100 1600
-Wire Notes Line
-	4750 1600 4750 3250
-Wire Notes Line
-	3500 3250 3500 1600
 Wire Notes Line
 	3500 1600 4750 1600
 Wire Wire Line
@@ -696,4 +648,28 @@ F 3 "~" H 2600 2100 50  0001 C CNN
 $EndComp
 Text Label 1450 5600 2    50   ~ 0
 Unison
+Text Notes 3850 2000 0    50   ~ 0
+1
+Text Notes 3850 2600 0    50   ~ 0
+1
+Text Notes 3850 2750 0    50   ~ 0
+1
+Text Notes 3700 2900 0    50   ~ 0
+1
+Text Notes 3550 2900 0    50   ~ 0
+1
+Wire Notes Line
+	3500 2950 3500 1600
+Wire Notes Line
+	4750 1600 4750 2950
+Wire Notes Line
+	3500 2950 4750 2950
+Wire Notes Line
+	3650 1700 3650 2950
+Wire Notes Line
+	3950 1700 3950 2950
+Wire Notes Line
+	3800 1700 3800 2950
+Wire Notes Line
+	4100 2950 4100 1600
 $EndSCHEMATC
